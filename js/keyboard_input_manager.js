@@ -66,8 +66,11 @@ KeyboardInputManager.prototype.listen = function () {
     if (!modifiers && event.which === 82) {
       self.restart.call(self, event);
     }
-    if (!modifiers && event.which === 82) {
-      self.restart.call(self, event);
+    else if (!modifiers && event.which === 83) {
+      self.save.call(self, event);
+    }
+    else if (!modifiers && event.which === 76) {
+      self.load.call(self, event);
     }
   });
 
