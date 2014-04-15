@@ -41,7 +41,7 @@ GameManager.prototype.load = function () {
     this.won         = lastSave.won;
     this.keepPlaying = lastSave.keepPlaying;
   }
-  this.actuate();
+  this.actuate()
 };
 
 // Keep playing after winning (allows going over 2048)
